@@ -57,7 +57,7 @@ if (process.env.NODE_ENV !== 'production') {
     app.use(cors(corsOptions));
 }
 
-app.get('/', (req, res) => {
+app.use('/', (req, res) => {
     res.send(`I'm Alive`)
 })
 
