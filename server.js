@@ -75,7 +75,8 @@ app.get("/api/external", checkJwt, (req, res) => {
 
 
 
-const port = 5600
+
+const port = process.env.PORT || 5600
 app.listen(port, () => {
     console.log('app listening on port ' + port);
 })
